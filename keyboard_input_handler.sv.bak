@@ -1,0 +1,28 @@
+module keyboard_input_handler(reset, clk, makeBreak, targetMake, outCode, pressed) begin
+	input logic reset, makeBreak, clk;
+	input logic [7:0] targetMake, targetBreak, outCode;
+	
+	output logic pressed;
+	
+	enum{unpressed, pressed} ps, ns;
+	
+	always_comb begin
+		case(ps)
+			unpressed: if(makeBreak && outCode == targetMake) ns = pressed;
+						  else ns = unpressed;
+						  
+			pressed:   if(!makeBreak && outCode == targetBreak) ns = unpressed;
+			           else ns = pressed; 
+		endcase
+	end
+	
+	always_ff @(posedge clk) begin
+		if(reset)
+			ps <= unpressed;
+		else 
+			ps <= ns;
+	end
+	
+	assign pressed = (ps == pressed);
+	
+endmodule 

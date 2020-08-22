@@ -1,0 +1,12 @@
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (10281): Verilog HDL Declaration information at DFF2.sv(2): object "Q" differs only in case from object "q" in the same scope File: C:/Users/Christopher A/Documents/EE 371/lab6 fix/Lab 6/DFF2.sv Line: 2
+Warning (10268): Verilog HDL information at keyboard_inner_driver.v(47): always construct contains both blocking and non-blocking assignments File: C:/Users/Christopher A/Documents/EE 371/lab6 fix/Lab 6/keyboard_inner_driver.v Line: 47
+Warning (10268): Verilog HDL information at platform_memory.sv(10): always construct contains both blocking and non-blocking assignments File: C:/Users/Christopher A/Documents/EE 371/lab6 fix/Lab 6/platform_memory.sv Line: 10
+Warning (10034): Output port "LEDR[8..1]" at DE1_SoC.sv(7) has no driver File: C:/Users/Christopher A/Documents/EE 371/lab6 fix/Lab 6/DE1_SoC.sv Line: 7
+Warning (10034): Output port "platform_buffer[150][0..59]" at platform_memory.sv(1) has no driver File: C:/Users/Christopher A/Documents/EE 371/lab6 fix/Lab 6/platform_memory.sv Line: 1
+Warning (10034): Output port "platform_buffer[150][161..639]" at platform_memory.sv(1) has no driver File: C:/Users/Christopher A/Documents/EE 371/lab6 fix/Lab 6/platform_memory.sv Line: 1
+Warning (10034): Output port "platform_buffer[0..149]" at platform_memory.sv(1) has no driver File: C:/Users/Christopher A/Documents/EE 371/lab6 fix/Lab 6/platform_memory.sv Line: 1
+Warning (10034): Output port "platform_buffer[300][0..199]" at platform_memory.sv(1) has no driver File: C:/Users/Christopher A/Documents/EE 371/lab6 fix/Lab 6/platform_memory.sv Line: 1
+Warning (10034): Output port "platform_buffer[300][301..639]" at platform_memory.sv(1) has no driver File: C:/Users/Christopher A/Documents/EE 371/lab6 fix/Lab 6/platform_memory.sv Line: 1
+Warning (10034): Output port "platform_buffer[151..299]" at platform_memory.sv(1) has no driver File: C:/Users/Christopher A/Documents/EE 371/lab6 fix/Lab 6/platform_memory.sv Line: 1
+Warning (10034): Output port "platform_buffer[301..479]" at platform_memory.sv(1) has no driver File: C:/Users/Christopher A/Documents/EE 371/lab6 fix/Lab 6/platform_memory.sv Line: 1

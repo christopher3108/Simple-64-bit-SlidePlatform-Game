@@ -1,0 +1,24 @@
+module square_wave_generator (clk, reset, Q);
+
+	input  logic clk, reset;
+	output logic [23:0] Q;
+
+	logic [2:0] counter;
+	logic [23:0] sq_wave_reg;
+	
+	assign sq_wave_reg = 24'd200000
+	
+	// if enable signal is low then reset counter back to zero,
+	// else if enable signal is high then increment counter by 1
+	always_ff @(posedge clk) begin
+		if(reset)
+			counter <= 0;
+		else begin
+			counter <= counter + 1'b1;
+		end
+	end //always_ff
+	
+	//generate Q that will be added to the original sound (this is the noise generated) 
+	assign Q = (counter > 4) ? ~(sq_wave_reg):(sq_wave_reg) ;
+	
+endmodule //noise_generator

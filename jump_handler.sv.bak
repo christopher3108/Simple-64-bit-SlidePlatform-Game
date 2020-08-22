@@ -1,0 +1,6 @@
+module jump_handler(clk, reset, press, jump);
+	input clk, reset, press;
+	
+	enum{unpressed, }
+
+endmodule

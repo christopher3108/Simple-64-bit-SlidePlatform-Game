@@ -1,0 +1,56 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:53:04 on May 29,2020
+# vlog -reportprogress 300 ./keyboard_input_handler.sv 
+# -- Compiling module keyboard_input_handler
+# -- Compiling module keyboard_input_handler_test
+# 
+# Top level modules:
+# 	keyboard_input_handler_test
+# End time: 13:53:05 on May 29,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work keyboard_input_handler_test 
+# Start time: 13:53:05 on May 29,2020
+# Loading sv_std.std
+# Loading work.keyboard_input_handler_test
+# Loading work.keyboard_input_handler
+# ** Error: Cannot open macro file: keyboard_wave.do
+# Error in macro ./runlab.do line 17
+# Cannot open macro file: keyboard_wave.do
+#     while executing
+# "do keyboard_wave.do"
+add wave -position end  sim:/keyboard_input_handler_test/reset
+add wave -position end  sim:/keyboard_input_handler_test/makeBreak
+add wave -position end  sim:/keyboard_input_handler_test/clk
+add wave -position end  sim:/keyboard_input_handler_test/pressed
+add wave -position end  sim:/keyboard_input_handler_test/scanCode
+add wave -position end  sim:/keyboard_input_handler_test/outCode
+add wave -position end  sim:/keyboard_input_handler_test/k1/ps
+add wave -position end  sim:/keyboard_input_handler_test/k1/ns
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Alan/Desktop/Quartus/E E 371 Labs/Lab 6/keyboard_wave.do}
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:53:32 on May 29,2020
+# vlog -reportprogress 300 ./keyboard_input_handler.sv 
+# -- Compiling module keyboard_input_handler
+# -- Compiling module keyboard_input_handler_test
+# 
+# Top level modules:
+# 	keyboard_input_handler_test
+# End time: 13:53:32 on May 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:53:33 on May 29,2020, Elapsed time: 0:00:28
+# Errors: 3, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work keyboard_input_handler_test 
+# Start time: 13:53:33 on May 29,2020
+# Loading sv_std.std
+# Loading work.keyboard_input_handler_test
+# Loading work.keyboard_input_handler
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./keyboard_input_handler.sv(53)
+#    Time: 950 ps  Iteration: 1  Instance: /keyboard_input_handler_test
+# Break in Module keyboard_input_handler_test at ./keyboard_input_handler.sv line 53
